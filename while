@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contador com WHILE</title>
+</head>
+<body>
+
+  <h2>Contador de 1 a 10 (usando while)</h2>
+  <button onclick="contarComWhile()">Iniciar Contagem</button>
+  <div id="resultado"></div>
+
+  <script>
+    function contarComWhile() {
+      let resultado = "";
+      let i = 1;
+      while (i <= 10) {
+        resultado += i + " ";
+        i++;
+      }
+      document.getElementById("resultado").textContent = resultado;
+    }
+  </script>
+
+</body>
+</html>
